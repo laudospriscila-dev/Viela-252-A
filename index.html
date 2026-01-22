@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro Fotográfico – Avaliação 02 – Rua 251</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f4f4f4;
+      margin:0;
+      color:#222;
+    }
+
+    header{
+      background:#0b3c5d;
+      color:#fff;
+      padding:22px 15px;
+      text-align:center;
+    }
+
+    header h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:.3px;
+    }
+
+    header p{
+      margin:6px 0 0;
+      font-size:14px;
+      opacity:.9;
+    }
+
+    .container{
+      max-width:1150px;
+      margin:30px auto;
+      padding:0 15px;
+    }
+
+    .card-box{
+      background:#fff;
+      border:1px solid #ddd;
+      padding:18px 20px;
+      margin-bottom:22px;
+      box-shadow:0 2px 4px rgba(0,0,0,.06);
+    }
+
+    .card-box h2{
+      margin-top:0;
+      font-size:18px;
+      color:#0b3c5d;
+    }
+
+    .card-box p{
+      font-size:14px;
+      line-height:1.6;
+      margin:6px 0;
+    }
+
+    .highlight{
+      border-left:6px solid #0b3c5d;
+      padding-left:14px;
+      background:#fafafa;
+    }
+
+    .brand{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      align-items:center;
+    }
+
+    .brand img{
+      max-height:70px;
+    }
+
+    .brand-info{
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+      gap:18px;
+    }
+
+    .photo-card{
+      background:#fff;
+      border:1px solid #ddd;
+      box-shadow:0 2px 4px rgba(0,0,0,.08);
+    }
+
+    .photo-card img{
+      width:100%;
+      height:190px;
+      object-fit:cover;
+      display:block;
+      background:#111;
+    }
+
+    .photo-info{
+      padding:10px;
+      font-size:13px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px 15px;
+      font-size:12px;
+      color:#555;
+    }
+
+    a{color:#0b3c5d;text-decoration:none}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Registro Fotográfico do Imóvel – Avaliação 02</h1>
+  <p>Rua 251 – Setor Leste Universitário – Goiânia/GO</p>
+</header>
+
+<div class="container">
+
+  <!-- IDENTIFICAÇÃO TÉCNICA -->
+  <div class="card-box highlight">
+    <h2>1️⃣ Identificação Técnica do Imóvel – Avaliação 02</h2>
+
+    <p><strong>Imóvel:</strong><br>
+    Lote de terreno urbano nº 4/13, da quadra 35</p>
+
+    <p><strong>Endereço:</strong><br>
+    Rua 251, esquina com a Rua 227-A<br>
+    Setor Leste Universitário – Goiânia/GO</p>
+
+    <p><strong>Área total do terreno:</strong><br>
+    599,50 m²</p>
+
+    <p><strong>Dimensões e confrontações (registradas):</strong><br>
+    Frente: 13,00 m (Rua 251)<br>
+    Fundo: 18,00 m (divisa com lote 2/12)<br>
+    Lado esquerdo: 34,00 m (divisa com Rua 227-A)<br>
+    Lado direito: 29,00 m (divisa com lote 11)</p>
+
+    <p><strong>Observação técnica:</strong><br>
+    Trata-se de lote de esquina, condição que impacta positivamente o valor unitário do terreno no método comparativo de dados de mercado.</p>
+  </div>
+
+  <!-- BLOCO PROFISSIONAL -->
+  <div class="card-box">
+    <div class="brand">
+      <img src="logo-priscila.png" alt="Priscila Alves – Avaliação Imobiliária">
+      <div class="brand-info">
+        <strong>Priscila Alves</strong><br>
+        Avaliação Imobiliária e Perícia Técnica<br>
+        CRECI: 38.804 &nbsp;|&nbsp; CNAI: 46.495<br>
+        WhatsApp: <a href="https://wa.me/5562998787270" target="_blank">+55 62 99878-7270</a><br>
+        Site: <a href="https://priscilaalves.store" target="_blank">www.priscilaalves.store</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTA TÉCNICA -->
+  <div class="card-box highlight">
+    <p><strong>Nota Técnica:</strong><br>
+    O presente registro fotográfico integra o Laudo de Avaliação Imobiliária exclusivamente como documentação complementar, estando as imagens hospedadas em ambiente eletrônico externo para garantir leveza do arquivo PDF, rastreabilidade, transparência técnica e verificação independente.</p>
+  </div>
+
+  <!-- GALERIA -->
+  <div class="grid" id="gallery"></div>
+
+</div>
+
+<footer>
+  Conteúdo hospedado em repositório público (GitHub Pages) para fins técnicos, periciais e documentais.
+</footer>
+
+<script>
+  const files = [
+    "IMG_5464 Grande.jpeg",
+    "IMG_5466 Grande.jpeg",
+    "IMG_5467 Grande.jpeg",
+    "IMG_5468 Grande.jpeg",
+    "IMG_5470 Grande.jpeg",
+    "IMG_5472 Grande.jpeg",
+    "IMG_5473 Grande.jpeg",
+    "IMG_5474 Grande.jpeg",
+    "IMG_5476 Grande.jpeg",
+    "IMG_5477 Grande.jpeg",
+    "IMG_5478 Grande.jpeg",
+    "IMG_5479 Grande.jpeg",
+    "IMG_5480 Grande.jpeg",
+    "IMG_5481 Grande.jpeg",
+    "IMG_5482 Grande.jpeg",
+    "IMG_5484 Grande.jpeg",
+    "IMG_5485 Grande.jpeg",
+    "IMG_5486 Grande.jpeg",
+    "IMG_5487 Grande.jpeg",
+    "IMG_5488 Grande.jpeg",
+    "IMG_5489 Grande.jpeg",
+    "IMG_5490 Grande.jpeg",
+    "IMG_5491 Grande.jpeg",
+    "IMG_5492 Grande.jpeg",
+    "IMG_5494 Grande.jpeg",
+    "IMG_5496 Grande.jpeg",
+    "IMG_5497 Grande.jpeg",
+    "IMG_5498 Grande.jpeg",
+    "IMG_5499 Grande.jpeg",
+    "IMG_5500 Grande.jpeg",
+    "IMG_5501 Grande.jpeg",
+    "IMG_5502 Grande.jpeg",
+    "IMG_5503 Grande.jpeg",
+    "IMG_5504 Grande.jpeg",
+    "IMG_5505 Grande.jpeg",
+    "IMG_5506 Grande.jpeg",
+    "IMG_5507 Grande.jpeg",
+    "IMG_5508 Grande.jpeg",
+    "IMG_5509 Grande.jpeg",
+    "IMG_5511 Grande.jpeg",
+    "IMG_5512 Grande.jpeg",
+    "IMG_5514 Grande.jpeg",
+    "IMG_5522 Grande.jpeg",
+    "IMG_5523 Grande.jpeg",
+    "IMG_5525 Grande.jpeg"
+  ];
+
+  const gallery = document.getElementById("gallery");
+
+  files.forEach((file, i) => {
+    const card = document.createElement("div");
+    card.className = "photo-card";
+
+    card.innerHTML = `
+      <a href="photos/${file}" target="_blank" rel="noopener">
+        <img src="photos/${file}" alt="Imagem ${i+1}">
+      </a>
+      <div class="photo-info">
+        <strong>Imagem ${String(i+1).padStart(2,"0")}</strong><br>
+        Registro fotográfico do imóvel – Avaliação 02
+      </div>
+    `;
+
+    gallery.appendChild(card);
+  });
+</script>
+
+</body>
+</html>
